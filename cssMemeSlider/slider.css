@@ -1,0 +1,13 @@
+.memes {
+    max-width: 1280px;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.memes>.mem>img{
+    width: auto;
+    height: 20em;
+}
+.pagination{
+    scroll-behavior: auto;
+}
