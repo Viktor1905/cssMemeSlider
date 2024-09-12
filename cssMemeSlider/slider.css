@@ -15,10 +15,11 @@
     grid-area:img;
 }
 .text{
-    width: 100%;
+    width: 80vw;
     display: flex;
     grid-area:txt;
     transition: 0.5s all;
+    overflow: hidden;
 }
 .text>div>p{
     display: inline-block;
@@ -72,18 +73,18 @@ input:checked + label {
     transform: translateX(-300%);
 }
 
-#memRadio1:checked ~ .text{
+#memRadio1:checked ~ .text>div{
     transform: translateX(0);
 }
-#memRadio2:checked ~ .text{
-    transform: translateX(-100%);
+#memRadio2:checked ~ .text>div{
+    transform: translateX(-100vw);
 }
-#memRadio3:checked ~ .text{
-    transform: translateX(-200%);
+#memRadio3:checked ~ .text>div{
+    transform: translateX(-200vw);
 }
 
-#memRadio4:checked ~ .text{
-    transform: translateX(-300%);
+#memRadio4:checked ~ .text>div{
+    transform: translateX(-300vw);
 }
 #memRadio1 + label{
     grid-area: radio1;
@@ -103,5 +104,10 @@ label{
 }
 
 .text >div {
-    width: 100%;
+    transition: 0.5s all;
+    display: flex;
+}
+.text >div >div{
+    width: 100vw;
+    display: flex;
 }
