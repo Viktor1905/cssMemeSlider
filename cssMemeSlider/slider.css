@@ -1,13 +1,62 @@
 .memes {
-    max-width: 1280px;
-    display: flex;
+    width: 500px;
     overflow: hidden;
+    height: 500px;
     scroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'img img'
+    'pag pag'
+    'txt txt';
 }
-.memes>.mem>img{
+.images{
+    display: flex;
+    grid-area:img;
+}
+.text{
+    display: flex;
+    grid-area:txt;
+}
+.mem-text{
+    width: 100%;
+}
+.memes>.images>img{
     width: auto;
     height: 20em;
 }
 .pagination{
-    scroll-behavior: auto;
+    width: 200px;
+    display: flex;
+    grid-area:pag;
+}
+input{
+    display: none;
+}
+label {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 2px solid blue;
+    box-sizing: border-box;
+}
+label:hover{
+    background-color: white;
+}
+input:checked + label {
+    background-color: green;
+    border: 2px solid;
+}
+.mem>img{
+    grid-area: img;
+}
+.mem>.mem-text{
+    grid-area: text;
+}
+
+
+#memRadio4:checked ~ .images{
+    transform: translateX(100px);
 }
