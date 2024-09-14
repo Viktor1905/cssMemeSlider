@@ -44,6 +44,10 @@ input{
     display: none;
 }
 label {
+    width: 20px;
+    height: 20px;
+}
+label>div{
     display: block;
     width: 10px;
     height: 10px;
@@ -52,10 +56,10 @@ label {
     border: 2px solid blue;
     box-sizing: border-box;
 }
-label:hover{
+label>div:hover{
     background-color: white;
 }
-input:checked + label {
+input:checked + label>div {
     background-color: rgba(0,0,0,0);
     border: 1px solid blue;
 }
