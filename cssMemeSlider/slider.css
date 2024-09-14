@@ -1,5 +1,5 @@
 body{
-    margin: 20px 0;
+    margin: 20px 20px;
     background-color: rgba(0, 0, 0, 0.71);
 }
 .memes {
@@ -71,14 +71,14 @@ input:checked + label>div {
     transform: translateX(0);
 }
 #memRadio2:checked ~ .images{
-    transform: translateX(-100%);
+    transform: translateX(-100vw);
 }
 #memRadio3:checked ~ .images{
-    transform: translateX(-200%);
+    transform: translateX(-200vw);
 }
 
 #memRadio4:checked ~ .images{
-    transform: translateX(-300%);
+    transform: translateX(-300vw);
 }
 
 #memRadio1:checked ~ .text>div{
@@ -131,5 +131,8 @@ label{
     .text{
         width: 100vw;
     }
+
+}
+@media(min-width: 1300px){
 
 }
