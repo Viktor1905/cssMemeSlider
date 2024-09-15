@@ -24,6 +24,7 @@ body{
     transition: 0.5s all;
     overflow: hidden;
     color: white;
+    margin: =;
 }
 .text>div>p{
     display: inline-block;
